@@ -13,7 +13,7 @@ app.use(cors());
 app.use(router);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-    if(err instanceof Error) {
+    if (err instanceof Error) {
         // Se for uma instancia do tipo error
         res.status(400).json({
             error: err.message
@@ -26,4 +26,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     });
 });
 
-app.listen(3333, () => console.log('Servidor online!'));
+app.listen(3333, () => console.log('Servidor online!!'));
